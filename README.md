@@ -8,9 +8,16 @@ This is a curated list of my open source contributions to projects particularly 
 
 #### Clang
 
+Improved readability and maintainability of diagnostic logic:  
+
 - **[clang][diagnostics] Refactor note_constexpr_invalid_cast to use enum_select**  
-  Improved readability and maintainability of diagnostic logic.  
   _[PR #130868](https://github.com/llvm/llvm-project/pull/130868)_
+
+- **[clang][diagnostics] Refactor warn_doc_container_decl_mismatch to use enum_select**
+  _[PR #147120](https://github.com/llvm/llvm-project/pull/#147120)_
+
+- **[clang][diagnostics] Refactor warn_doc_api_container_decl_mismatch to use enum_select**
+  _[PR #146433](https://github.com/llvm/llvm-project/pull/#146433)_
 
 #### MLIR
 
