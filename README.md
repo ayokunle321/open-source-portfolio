@@ -29,13 +29,13 @@ Improved readability and maintainability of diagnostic logic:
   Added a check to catch affine loops with bound maps that have no results.  
   _[PR #127105](https://github.com/llvm/llvm-project/pull/127105)_
 
-- **[mlir][IR] Skip zero-result functions in test-func-erase-result pass**  
-  Fixed an assertion error by ensuring functions with no results are skipped.  
-  _[PR #127941](https://github.com/llvm/llvm-project/pull/127941)_
-
 - **[mlir][affine] Fix crash in affine-loop-fusion with empty op list**  
   Guarded against empty input to `getInnermostCommonLoop`.  
   _[PR #144841](https://github.com/llvm/llvm-project/pull/144841)_
+
+- **[mlir][IR] Skip zero-result functions in test-func-erase-result pass**  
+  Fixed an assertion error by ensuring functions with no results are skipped.  
+  _[PR #127941](https://github.com/llvm/llvm-project/pull/127941)_
 
 #### Documentation
 
