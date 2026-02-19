@@ -6,23 +6,17 @@ This is a curated list of my open source contributions to projects particularly 
 
 ## ClangIR
 
-#### CodeGen and Builtin Support
+#### Upstream
 
 - **[CIR] Upstream support for setjmp & longjmp builtins**
   Implemented codegen and lowering for these low-level intrinsics.
   _[PR #178989](https://github.com/llvm/llvm-project/pull/178989)_
 
-- **[CIR] Upstream support for ATan2Op**
-  Implemented codegen and lowering for `builtin_elementwise_atan2`.
- _[PR #178989](https://github.com/llvm/llvm-project/pull/179078)_
-
-- **[CIR] Rename the IR ops for StackSaveOp and StackRestoreOp**
-  Renamed these ops to match ClangIR docs.
-  _[PR #179012](https://github.com/llvm/llvm-project/pull/179012)_
-
 - **[CIR][CodeGen] Upstream support for FP environments and RAII options**
   Added codegen support for floating point RAII opttions.
   _[PR #179121](https://github.com/llvm/llvm-project/pull/179121)_
+
+#### CodeGen and Builtin Support
 
 - **Add support for X86 builtins: `tzcnt_u16`, `tzcnt_u32`, `tzcnt_u64`**  
   Implemented codegen and lowering for these low-level intrinsics.  
