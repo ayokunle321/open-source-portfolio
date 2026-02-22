@@ -50,6 +50,26 @@ This is a curated list of my open source contributions to projects particularly 
   
 ---
 
+#### MLIR
+
+- **[mlir][affine] Add check for affine.for bound map results**  
+  Added a check to catch affine loops with bound maps that have no results.  
+  _[PR #127105](https://github.com/llvm/llvm-project/pull/127105)_
+
+- **[mlir][affine] Fix crash in affine-loop-fusion with empty op list**  
+  Guarded against empty input to `getInnermostCommonLoop`.  
+  _[PR #144841](https://github.com/llvm/llvm-project/pull/144841)_
+
+- **[mlir][linalg] Add check for reduction operation in contraction body**  
+  Prevented a crash in the `linalg-specialize-generic-ops` pass by verifying the presence of a valid reduction op.  
+  _[PR #123134](https://github.com/llvm/llvm-project/pull/123134)_
+
+- **[mlir][IR] Skip zero-result functions in test-func-erase-result pass**  
+  Fixed an assertion error by ensuring functions with no results are skipped.  
+  _[PR #127941](https://github.com/llvm/llvm-project/pull/127941)_
+
+---
+
 #### Clang
 
 Improved readability and maintainability of diagnostic logic:  
@@ -63,25 +83,6 @@ Improved readability and maintainability of diagnostic logic:
 - **[clang][diagnostics] Refactor warn_doc_api_container_decl_mismatch to use enum_select**
   _[PR #146433](https://github.com/llvm/llvm-project/pull/#146433)_
 
----
-
-#### MLIR
-
-- **[mlir][linalg] Add check for reduction operation in contraction body**  
-  Prevented a crash in the `linalg-specialize-generic-ops` pass by verifying the presence of a valid reduction op.  
-  _[PR #123134](https://github.com/llvm/llvm-project/pull/123134)_
-
-- **[mlir][affine] Add check for affine.for bound map results**  
-  Added a check to catch affine loops with bound maps that have no results.  
-  _[PR #127105](https://github.com/llvm/llvm-project/pull/127105)_
-
-- **[mlir][affine] Fix crash in affine-loop-fusion with empty op list**  
-  Guarded against empty input to `getInnermostCommonLoop`.  
-  _[PR #144841](https://github.com/llvm/llvm-project/pull/144841)_
-
-- **[mlir][IR] Skip zero-result functions in test-func-erase-result pass**  
-  Fixed an assertion error by ensuring functions with no results are skipped.  
-  _[PR #127941](https://github.com/llvm/llvm-project/pull/127941)_
 
 ---
 
