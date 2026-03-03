@@ -9,14 +9,18 @@ This is a curated list of my open source contributions to projects particularly 
 #### Upstream
 
 - **[CIR] Upstream support for setjmp & longjmp builtins**
-  Implemented codegen and lowering for these low-level intrinsics.
   _[PR #178989](https://github.com/llvm/llvm-project/pull/178989)_
 
 - **[CIR][CodeGen] Upstream support for FP environments and RAII options**
-  Added codegen support for floating point RAII opttions.
   _[PR #179121](https://github.com/llvm/llvm-project/pull/179121)_
 
-#### CodeGen and Builtin Support
+- **[CIR][NFC] Update the constructor sites of CIRGenFPOptionsRAII**
+  _[PR #182187](https://github.com/llvm/llvm-project/pull/182187)_
+
+- **[CIR][NFC] Move some builtin tests to the CodeGenBuitins folder**
+  _[PR #183607](https://github.com/llvm/llvm-project/pull/183607)_
+
+#### Incubator
 
 - **Add support for X86 builtins: `tzcnt_u16`, `tzcnt_u32`, `tzcnt_u64`**  
   Implemented codegen and lowering for these low-level intrinsics.  
@@ -59,14 +63,6 @@ This is a curated list of my open source contributions to projects particularly 
 - **[mlir][affine] Fix crash in affine-loop-fusion with empty op list**  
   Guarded against empty input to `getInnermostCommonLoop`.  
   _[PR #144841](https://github.com/llvm/llvm-project/pull/144841)_
-
-- **[mlir][linalg] Add check for reduction operation in contraction body**  
-  Prevented a crash in the `linalg-specialize-generic-ops` pass by verifying the presence of a valid reduction op.  
-  _[PR #123134](https://github.com/llvm/llvm-project/pull/123134)_
-
-- **[mlir][IR] Skip zero-result functions in test-func-erase-result pass**  
-  Fixed an assertion error by ensuring functions with no results are skipped.  
-  _[PR #127941](https://github.com/llvm/llvm-project/pull/127941)_
 
 ---
 
