@@ -10,15 +10,24 @@ This is a curated list of my open source contributions to projects particularly 
 
 - **[CIR] Upstream support for setjmp & longjmp builtins**
   _[PR #178989](https://github.com/llvm/llvm-project/pull/178989)_
-
+  
 - **[CIR][CodeGen] Upstream support for FP environments and RAII options**
   _[PR #179121](https://github.com/llvm/llvm-project/pull/179121)_
-
+  
 - **[CIR][NFC] Update the constructor sites of CIRGenFPOptionsRAII**
   _[PR #182187](https://github.com/llvm/llvm-project/pull/182187)_
-
+  
 - **[CIR][NFC] Move some builtin tests to the CodeGenBuitins folder**
   _[PR #183607](https://github.com/llvm/llvm-project/pull/183607)_
+  
+- **[CIR][CodeGen] Upstream support for `__builtin_isinf_sign`**
+  _[PR #183977](https://github.com/llvm/llvm-project/pull/183977)_
+  
+- **[CIR][CIRGen] Upstream support for `__builtin_bcopy`**
+  _[PR #185038](https://github.com/llvm/llvm-project/pull/185038)_
+  
+- **[CIR][CIRGen] Add support for `__sync_*` binary atomic builtins**
+  _[PR #186026](https://github.com/llvm/llvm-project/pull/186026)_
 
 #### Incubator
 
